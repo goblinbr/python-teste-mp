@@ -19,7 +19,7 @@ class TestAgrupamentos(unittest.TestCase):
         dados = []
         for estado in estados.keys():
             for i in range(estados[estado]):
-                dados.append({ 'nome': 'Nome ' + str(i), 'cidade': 'cidade de ' + estado + ' ' + str(i), 'estado': estado })
+                dados.append({ 'nome': f'Nome {i}', 'cidade': f'cidade de {estado} {i}', 'estado': estado })
         agrupamento = agrupar_dados_por_chave(dados, 'estado')
         self.assertEqual(len(agrupamento), len(estados))
         self.assertEqual(len(agrupamento['SC']), estados['SC'])
