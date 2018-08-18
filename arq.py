@@ -1,4 +1,4 @@
-import csv
+from csv import DictReader
 
 class ArquivoCsv:
     def __init__(self, arquivo):
@@ -8,9 +8,9 @@ class ArquivoCsv:
     def ler(self):
         dados = []
         try:
-            with open(self.arquivo) as arq:
+            with open(self.arquivo, encoding='utf-8') as arq:
                 self.existe = True
-                leitor = csv.DictReader(arq)
+                leitor = DictReader(arq)
                 for linha in leitor:
                     dados.append(linha)
         except FileNotFoundError:
