@@ -1,5 +1,5 @@
 import unittest
-from arq import ArquivoCsv, ArquivoJson
+from arquivos import ArquivoCsv, ArquivoJson
 
 class TestArquivoCsv(unittest.TestCase):
     def test_init(self):
