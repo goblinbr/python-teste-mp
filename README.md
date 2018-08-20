@@ -11,7 +11,15 @@ PR 4
 SC 9  
 SP 1  
 
-# Para utilizar sem docker
+# Utilizar com docker
+- A partir de uma URL:  
+\> docker run goblinbr/python-teste-mp app.py https://gist.githubusercontent.com/goblinbr/89c3e2dc07187ebbfbdef0485082723e/raw/11fb91cdb30fb98338d8352910f84d71280d4089/teste-mp.csv  
+
+- A partir de um arquivo:  
+\> docker run -v $(pwd):/mnt/local/ goblinbr/python-teste-mp app.py /mnt/local/nome_do_arquivo  
+**pode substituir $(pwd) por um diretório onde o arquivo se encontra, exemplo: /home/usuario/arquivos/**
+
+# Utilizar sem docker
 - Requisito python >= 3.6
 - Executar no windows:  
 \> app.py arquivo_ou_url
