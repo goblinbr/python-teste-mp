@@ -15,3 +15,7 @@ SP 1
 - Requisito python >= 3.6
 - Executar:  
 \> app.py arquivo_ou_url
+
+
+# Rodar os testes
+\> python -m unittest
