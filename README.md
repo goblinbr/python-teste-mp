@@ -13,9 +13,10 @@ SP 1
 
 # Para utilizar sem docker
 - Requisito python >= 3.6
-- Executar:  
+- Executar no windows:  
 \> app.py arquivo_ou_url
-
+- Executar no linux:  
+\> python3 app.py arquivo_ou_url
 
 # Rodar os testes
 \> python -m unittest
